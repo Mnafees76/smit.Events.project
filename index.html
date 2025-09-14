@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nafees CV</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="cv-container">
+
+        <div class="profile-section">
+            <div id="imageContainer" class="profile-image hidden"></div>
+            <button id="showImageBtn">👤 Show / Hide My Image</button>
+        </div>
+
+
+        <div class="info-section">
+            <h1>Nafees</h1>
+            <p id="infoText" class="hidden">
+                Hello! Mera naam Nafees hai. Main 4th grade ka student hoon aur mujhe coding seekhna bohot pasand hai.
+                Main React, Next.js aur Python seekh raha hoon. Mera goal ek expert web developer banna hai.
+            </p>
+            <button id="showInfoBtn">📄 Show / Hide About Me</button>
+        </div>
+    </div>
+
+
+    <div class="form-section">
+        <button id="showFormBtn">📧 Open Contact Form</button>
+        <form id="userForm" class="hidden">
+            <h2>Contact Me</h2>
+            <input type="email" id="email" placeholder="Enter your email">
+            <input type="text" id="mobile" placeholder="Enter your mobile number">
+            <input type="text" id="address" placeholder="Enter your address">
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
