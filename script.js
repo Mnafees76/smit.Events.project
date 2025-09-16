@@ -1,35 +1,45 @@
-// Get Elements
-const showImageBtn = document.getElementById("showImageBtn");
-const showInfoBtn = document.getElementById("showInfoBtn");
-const showFormBtn = document.getElementById("showFormBtn");
+  const imgDiv = document.getElementById("imgdiv");
+    const img = document.getElementById("img");
+    let isVisible = false; // state track karne ke liye
 
-const imageContainer = document.getElementById("imageContainer");
-const infoText = document.getElementById("infoText");
-const userForm = document.getElementById("userForm");
+    imgDiv.addEventListener("click", function () {
+      if (isVisible === false) {
+        img.style.display = "block"; // show image
+        isVisible = true;
+      } else {
+        img.style.display = "none"; // hide image
+        isVisible = false;
+      }
+    });
+     const about = document.getElementById("about");
+    const details = document.getElementById("details");
+    let shoowdetal = false;
+    about.addEventListener("click",function(){
+        if(shoowdetal === false){
+            details.style.display="block";
+            shoowdetal = true;
+        }
+        else{
+           details.style.display="none";
+             shoowdetal = false;
+        }
 
-// Show / Hide Image
-showImageBtn.addEventListener("click", function () {
-    if (imageContainer.classList.contains("hidden")) {
-        imageContainer.innerHTML = `<img src="https://www.shutterstock.com/image-photo/indian-college-boy-showing-diary-600nw-2094035788.jpg" alt="My Image">`;
-        imageContainer.classList.remove("hidden");
-    } else {
-        imageContainer.classList.add("hidden");
-        imageContainer.innerHTML = "";
-    }
-});
+    });
+      const skills = document.getElementById("skills");
+    const list = document.getElementById("list");
+    let showlist = false;
+   skills.addEventListener("click",function(){
+        if( showlist === false){
+           list.style.display="block";
+            showlist = true;
+        }
+        else{
+          list.style.display="none";
+             showlist = false;
+        }
 
-// Show / Hide Info
-showInfoBtn.addEventListener("click", function () {
-    infoText.classList.toggle("hidden");
-});
-
-// Show / Hide Form
-showFormBtn.addEventListener("click", function () {
-    userForm.classList.toggle("hidden");
-});
-
-// Form Validation
-userForm.addEventListener("submit", function (event) {
+    });
+   user.addEventListener("submit", function (event) {
     event.preventDefault();
 
     const email = document.getElementById("email").value.trim();
@@ -52,5 +62,5 @@ userForm.addEventListener("submit", function (event) {
     }
 
     alert("✅ Your form has been submitted successfully!");
-    userForm.reset();
+    user.reset();
 });
