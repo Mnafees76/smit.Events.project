@@ -2,44 +2,87 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nafees CV</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="cv-container">
+  <main id="man">
 
-        <div class="profile-section">
-            <div id="imageContainer" class="profile-image hidden"></div>
-            <button id="showImageBtn">👤 Show / Hide My Image</button>
-        </div>
+    <!-- left side  -->
+    <div id="left">
+      <!-- image div -->
+      <div id="imgdiv">
+        <img id="img" 
+             src="https://static.vecteezy.com/system/resources/thumbnails/029/331/809/small/ai-generative-happy-businessman-standing-with-arms-crossed-isolated-on-white-background-free-photo.jpg"
+             alt="picher">
+      </div>
 
+      <!-- heading div -->
+      <div id="heading">
+        <h1 id="name">Nafey Agarwal</h1>
+        <span>Frontend Developer</span>
+      </div>
 
-        <div class="info-section">
-            <h1>Nafees</h1>
-            <p id="infoText" class="hidden">
-                Hello! Mera naam Nafees hai. Main 4th grade ka student hoon aur mujhe coding seekhna bohot pasand hai.
-                Main React, Next.js aur Python seekh raha hoon. Mera goal ek expert web developer banna hai.
-            </p>
-            <button id="showInfoBtn">📄 Show / Hide About Me</button>
-        </div>
+      <!-- span div -->
+      <div id="spaninfo">
+        <p>Surakarta, December 2, 1994</p>
+        <p>+62 822 2045 4652</p>
+        <p>hani.husam@gmail.com</p>
+        <p>Yogyakarta, Indonesia</p>
+      </div>
+
+      <!-- heading 2 div -->
+      <div id="honor">
+        <h2>Honor & Award</h2>
+        <h5>Best Graduated</h5>
+        <span id="p2">
+          Included in one of the award recipients of the best graduate students in the IV
+          graduation period of UPN “Veteran” Yogyakarta
+        </span>
+      </div>
     </div>
 
+    <!-- right side -->
+    <div id="right">
+      <!-- about -->
+      <div id="about">
+        <h1>About:</h1>
+        <p id="details">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos impedit saepe, atque
+          illum nostrum perspiciatis ad nesciunt aperiam culpa ipsam omnis laudantium sequi in?
+          Voluptatem, ut quisquam! Recusandae, voluptas blanditiis!</p>
+      </div>
 
-    <div class="form-section">
-        <button id="showFormBtn">📧 Open Contact Form</button>
-        <form id="userForm" class="hidden">
-            <h2>Contact Me</h2>
-            <input type="email" id="email" placeholder="Enter your email">
+      <!-- Skills -->
+      <div id="skills">
+        <h1>Skills:</h1>
+        <ul id="list">
+          <li>HTML and CSS</li>
+          <li>Scripting language: Javascript, Typescript, Python, Java</li>
+          <li>Framework/Library: Django, React, Next, Bootstrap, TailwindCSS, etc</li>
+          <li>Understanding UI Design; Visual Hierarchy, Design System, etc</li>
+        </ul>
+      </div>
+
+      <!-- Contact Form -->
+      <div id="form">
+        <h1 id="ContactMe">Contact Me:</h1>
+        
+  <form id="user">
+    
+           <input type="email" id="email" placeholder="Enter your email">
             <input type="text" id="mobile" placeholder="Enter your mobile number">
             <input type="text" id="address" placeholder="Enter your address">
             <button type="submit">Submit</button>
-        </form>
+  </form>
+        
+      </div>
     </div>
 
-    <script src="script.js"></script>
+  </main>
+  <script src="script.js"></script>
 </body>
 
 </html>
